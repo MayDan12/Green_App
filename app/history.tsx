@@ -1,57 +1,9 @@
-import { useRideStore } from "@/app/store/useRideStore";
+import { useRideStore } from "@/store/useRideStore";
 import { useTheme } from "@react-navigation/native";
 import { useRouter } from "expo-router";
 import { ArrowLeft, Calendar, Clock, Leaf } from "lucide-react-native";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-// Mock ride history data
-// const rideHistory = [
-//   {
-//     id: 1,
-//     date: "2024-12-15",
-//     time: "14:30",
-//     vehicleType: "Electric",
-//     from: "123 Main St, Downtown",
-//     to: "456 Oak Ave, Uptown",
-//     price: 12.5,
-//     co2Saved: 1.4,
-//     status: "completed",
-//   },
-//   {
-//     id: 2,
-//     date: "2024-12-14",
-//     time: "09:15",
-//     vehicleType: "Hybrid",
-//     from: "789 Park Lane",
-//     to: "321 Central Mall",
-//     price: 8.75,
-//     co2Saved: 0.8,
-//     status: "completed",
-//   },
-//   {
-//     id: 3,
-//     date: "2024-12-12",
-//     time: "18:45",
-//     vehicleType: "Electric",
-//     from: "555 Tech Park",
-//     to: "888 Green Valley",
-//     price: 15.2,
-//     co2Saved: 1.6,
-//     status: "completed",
-//   },
-//   {
-//     id: 4,
-//     date: "2024-12-10",
-//     time: "11:20",
-//     vehicleType: "Eco",
-//     from: "222 River Side",
-//     to: "999 Mountain View",
-//     price: 9.9,
-//     co2Saved: 1.1,
-//     status: "completed",
-//   },
-// ];
 
 export default function HistoryScreen() {
   const theme = useTheme();
